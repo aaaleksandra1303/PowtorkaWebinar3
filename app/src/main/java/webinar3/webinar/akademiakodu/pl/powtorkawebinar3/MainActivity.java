@@ -2,6 +2,7 @@ package webinar3.webinar.akademiakodu.pl.powtorkawebinar3;
 
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -32,8 +33,26 @@ public class MainActivity extends Activity {
     @OnClick(R.id.openActivity)
     public void clicked(View v)
     {
-        Intent i = new Intent(this,LoginActivity.class);
-        i.putExtra("key",text);
-        startActivity(i);
+
+        ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setMessage("Pobieram muzyke");
+        dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+       dialog.setIndeterminate(false);
+        dialog.setMax(10);
+        // dialog.show();
+
+        for( int i =1;i<=10;i++)
+        {
+
+            dialog.show();
+            dialog.setProgress(i);
+
+        }
+
+
+
+
+
+
     }
 }

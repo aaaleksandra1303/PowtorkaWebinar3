@@ -9,4 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="webinar3.webinar.akademiakodu.pl.powtorkawebinar3.LoginActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp" />
 </RelativeLayout>

@@ -37,9 +37,10 @@ public class MainActivity extends Activity {
         ProgressDialog dialog = new ProgressDialog(this);
         dialog.setMessage("Pobieram muzyke");
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-       dialog.setIndeterminate(false);
+        dialog.setIndeterminate(false);
         dialog.setMax(10);
-        // dialog.show();
+        dialog.show();
+        dialog.setProgress(5);
 
         for( int i =1;i<=10;i++)
         {
